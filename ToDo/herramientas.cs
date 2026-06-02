@@ -1,3 +1,4 @@
+// PUNTO 1
 namespace espacioTarea
 {
     public class Tarea { 
@@ -12,6 +13,17 @@ namespace espacioTarea
                 return true;
             } 
             return false;           
+        }
+        public void MostrarDatos()
+        {
+            Console.WriteLine($"[Tarea {TareaID}] - {Descripcion} ({Duracion} días)");
+        }
+        
+        public Tarea()
+        {
+            this.TareaID = 0;
+            this.Descripcion = "";
+            this.Duracion = 0;
         }
         
         public Tarea(int id, string descripcion,int dur)
